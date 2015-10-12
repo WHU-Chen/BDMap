@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cooorem.bdmap.CheckActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp">
+        <Button
+            android:id="@+id/btnLast"
+            android:background="@drawable/left"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+        <LinearLayout
+            android:id="@+id/linearContainer"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/tvWhere"
+                android:text="test"
+                android:textSize="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDbValue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvDescription"
+                android:text="test"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnNext"
+            android:background="@drawable/right"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:background="@drawable/btn_del_style"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/linearContainer"
+            android:layout_width="28dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="28dp" />
+    </RelativeLayout>
+</LinearLayout>
